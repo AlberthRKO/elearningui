@@ -1,3 +1,4 @@
+import 'package:elearningui/pages/course_page.dart';
 import 'package:elearningui/pages/home_page.dart';
 import 'package:elearningui/theme/colors.dart';
 // import 'package:elearningui/utils/complemento.dart';
@@ -26,9 +27,7 @@ class _RootAppState extends State<RootApp> {
       index: pageIndex,
       children: const [
         HomePage(),
-        Center(
-          child: Text('Curso'),
-        ),
+        CoursePage(),
         Center(
           child: Text('Explorador'),
         ),

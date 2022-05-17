@@ -125,7 +125,7 @@ class CustomCard extends StatelessWidget {
                   width: 5,
                 ),
                 Text(
-                  '\$$price',
+                  '\$' + price,
                   style: TextStyle(
                     color: primary,
                     fontSize: 15,

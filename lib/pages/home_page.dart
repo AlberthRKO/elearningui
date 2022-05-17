@@ -26,8 +26,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: background,
-      // extendBodyBehindAppBar: false,
-      appBar: getAppbar(secondary),
+      extendBodyBehindAppBar: true,
+      appBar: getAppbar(Colors.transparent),
       body: getBody(),
     );
   }
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                 clipper: BottomClipper(),
                 child: Container(
                   width: size.width,
-                  height: 270,
+                  height: 290,
                   color: secondary,
                 ),
               ),
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: spacer,
+                      height: spacer + 20,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
