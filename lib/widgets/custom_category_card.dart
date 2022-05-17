@@ -22,9 +22,10 @@ class CustomCategoryCard extends StatelessWidget {
               height: size.width * .25,
               width: size.width * .25,
               padding: const EdgeInsets.all(10.0),
+              alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: textWhite,
-                borderRadius: BorderRadius.circular(10.0),
+                borderRadius: BorderRadius.circular(20.0),
                 boxShadow: [
                   BoxShadow(
                     color: textBlack.withOpacity(0.05),
@@ -34,8 +35,8 @@ class CustomCategoryCard extends StatelessWidget {
                 ],
               ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     height: 35.0,
@@ -63,11 +64,10 @@ class CustomCategoryCard extends StatelessWidget {
                     homePageCategoryJson[index]['title'],
                     style: const TextStyle(
                       color: secondary,
-                      fontSize: 15.0,
+                      fontSize: 13,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const SizedBox(height: 0.0),
                 ],
               ),
             ),
