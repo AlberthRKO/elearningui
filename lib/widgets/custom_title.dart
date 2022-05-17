@@ -26,12 +26,14 @@ class CustomTitle extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          title,
-          style: TextStyle(
-            color: secondary,
-            fontSize: fontSize,
-            fontWeight: FontWeight.w700,
+        Flexible(
+          child: Text(
+            title,
+            style: TextStyle(
+              color: secondary,
+              fontSize: fontSize,
+              fontWeight: FontWeight.w700,
+            ),
           ),
         ),
         (extend)
@@ -44,7 +46,7 @@ class CustomTitle extends StatelessWidget {
                   // );
                 },
                 child: Text(
-                  'See More',
+                  'Ver todo',
                   style: TextStyle(
                       color: primary,
                       fontSize: 15.0,
