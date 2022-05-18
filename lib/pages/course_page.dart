@@ -25,7 +25,7 @@ class _CoursePageState extends State<CoursePage> {
   }
 
   Widget getBody() {
-    var size = MediaQuery.of(context).size;
+    // var size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: appPadding),

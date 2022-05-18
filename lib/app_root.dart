@@ -1,5 +1,7 @@
+import 'package:elearningui/pages/account_page.dart';
 import 'package:elearningui/pages/course_page.dart';
 import 'package:elearningui/pages/home_page.dart';
+import 'package:elearningui/pages/search_page.dart';
 import 'package:elearningui/theme/colors.dart';
 // import 'package:elearningui/utils/complemento.dart';
 import 'package:flutter/material.dart';
@@ -28,12 +30,8 @@ class _RootAppState extends State<RootApp> {
       children: const [
         HomePage(),
         CoursePage(),
-        Center(
-          child: Text('Explorador'),
-        ),
-        Center(
-          child: Text('Perfil'),
-        ),
+        SearchPage(),
+        AccountPage(),
       ],
     );
   }

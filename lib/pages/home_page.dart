@@ -170,9 +170,7 @@ class _HomePageState extends State<HomePage> {
                       (index) => Padding(
                         padding: index == categoryJson2.length - 1
                             ? EdgeInsets.only(right: appPadding)
-                            : EdgeInsets.only(
-                                right: 10,
-                              ),
+                            : EdgeInsets.only(right: 10),
                         child: CustomCategoriesButton(
                           title: categoryJson2[index]['title'],
                         ),
