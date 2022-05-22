@@ -6,7 +6,9 @@ import 'package:elearningui/widgets/custom_button_box.dart';
 import 'package:elearningui/widgets/custom_heading.dart';
 import 'package:elearningui/widgets/custom_place_holder.dart';
 import 'package:elearningui/widgets/custom_title.dart';
+import 'package:elearningui/widgets/modal_login.dart';
 import 'package:flutter/material.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({Key? key}) : super(key: key);
@@ -68,13 +70,25 @@ class _AccountPageState extends State<AccountPage> {
             SizedBox(
               height: smallSpacer,
             ),
-            CustomButtonBox(title: 'Login'),
+            GestureDetector(
+              onTap: () => _botoncito(context),
+              child: CustomButtonBox(title: 'Login'),
+            ),
             SizedBox(
               height: spacer,
             ),
           ],
         ),
       ),
+    );
+  }
+
+  _botoncito(context) {
+    showCupertinoModalBottomSheet(
+      expand: true,
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (context) => ModalInsideModal(),
     );
   }
 }

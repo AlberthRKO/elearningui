@@ -1,6 +1,7 @@
 import 'package:elearningui/data/category_json.dart';
 import 'package:elearningui/data/course_video_json.dart';
 import 'package:elearningui/data/courses_json.dart';
+import 'package:elearningui/pages/perfil_person_page.dart';
 import 'package:elearningui/theme/colors.dart';
 import 'package:elearningui/theme/padding.dart';
 import 'package:elearningui/widgets/custom_app_bar.dart';
@@ -262,7 +263,15 @@ class _CourseDetailState extends State<CourseDetail> {
                       SizedBox(
                         height: appPadding,
                       ),
-                      CustomButtonBox(title: 'Ver Perfil'),
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const PerfilPerson(),
+                          ),
+                        ),
+                        child: CustomButtonBox(title: 'Ver Perfil'),
+                      ),
                     ],
                   ),
                 ),
