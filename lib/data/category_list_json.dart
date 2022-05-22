@@ -1,5 +1,5 @@
 // ignore: constant_identifier_names
-const Code = {
+const code = {
   'feature_course': [
     {
       'image':

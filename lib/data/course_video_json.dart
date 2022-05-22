@@ -1,63 +1,59 @@
 const List courseVideoJson = [
   {
-    'title': 'Introduction and Setup',
+    'title': 'Introducción a React',
     'videos': [
       {
-        'title': 'Welcome to the Course',
+        'title': 'Resumen de la Sección',
         'runtime': '2:50 mn',
       },
       {
-        'title': 'React at a Glance',
+        'title': 'React y hooks',
         'runtime': '5:50 mn',
       },
       {
-        'title': 'Enviromental Setup',
+        'title': 'Configuración de entorno',
         'runtime': '4:50 mn',
       },
       {
-        'title': 'Using the courses file',
+        'title': 'Primera hook',
         'runtime': '2:50 mn',
       },
     ],
   },
   {
-    'title': 'Introduction and Setup',
+    'title': 'Componentes en React',
     'videos': [
       {
-        'title': 'Welcome to the Course',
+        'title': 'Resumen de la Sección',
         'runtime': '2:50 mn',
       },
       {
-        'title': 'React at a Glance',
+        'title': 'Componentes anidados',
         'runtime': '5:50 mn',
       },
       {
-        'title': 'Enviromental Setup',
+        'title': 'Preparación para despliegue',
         'runtime': '4:50 mn',
-      },
-      {
-        'title': 'Using the courses file',
-        'runtime': '2:50 mn',
       },
     ],
   },
   {
-    'title': 'Introduction and Setup',
+    'title': 'Proyecto final',
     'videos': [
       {
-        'title': 'Welcome to the Course',
+        'title': 'Resumen de la sección',
         'runtime': '2:50 mn',
       },
       {
-        'title': 'React at a Glance',
+        'title': 'Ajustes de Dominio',
         'runtime': '5:50 mn',
       },
       {
-        'title': 'Enviromental Setup',
+        'title': 'Despliegue del proyecto',
         'runtime': '4:50 mn',
       },
       {
-        'title': 'Using the courses file',
+        'title': 'Conclusión',
         'runtime': '2:50 mn',
       },
     ],

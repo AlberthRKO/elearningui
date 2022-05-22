@@ -1,4 +1,5 @@
 import 'package:elearningui/data/category_json.dart';
+import 'package:elearningui/pages/seccion_page.dart';
 import 'package:elearningui/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -17,7 +18,12 @@ class CustomCategoryCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(homePageCategoryJson.length, (index) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SeccionPage()),
+              );
+            },
             child: Container(
               height: size.width * .25,
               width: size.width * .25,

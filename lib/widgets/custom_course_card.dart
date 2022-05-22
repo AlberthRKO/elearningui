@@ -172,7 +172,7 @@ class _CustomCourseCardShrinkState extends State<CustomCourseCardShrink> {
     var size = MediaQuery.of(context).size;
     return Container(
       width: size.width,
-      height: size.width * .2,
+      height: size.width * .25,
       padding: const EdgeInsets.all(15.0),
       alignment: Alignment.center,
       decoration: BoxDecoration(
@@ -195,7 +195,7 @@ class _CustomCourseCardShrinkState extends State<CustomCourseCardShrink> {
           SizedBox(width: 15.0),
           Flexible(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(

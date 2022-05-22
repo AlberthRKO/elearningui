@@ -75,7 +75,7 @@ class CustomExpandableWidget extends StatelessWidget {
                         ),
                         const SizedBox(height: 5.0),
                         Text(
-                          '$totalVideoAmount Lectures - $totalVideoRuntime total length',
+                          '$totalVideoAmount Videos - $totalVideoRuntime horas totales',
                           style: TextStyle(
                             fontSize: 12.0,
                             color: secondary.withOpacity(0.5),

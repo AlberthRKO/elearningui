@@ -7,16 +7,19 @@ class CustomHeading extends StatelessWidget {
     required this.title,
     required this.subTitle,
     required this.color,
+    this.centro = false,
   }) : super(key: key);
 
   final String title;
   final String subTitle;
   final Color color;
+  final bool centro;
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment:
+          (centro) ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Text(
           title,
@@ -25,6 +28,7 @@ class CustomHeading extends StatelessWidget {
             fontSize: 25,
             fontWeight: FontWeight.w700,
           ),
+          textAlign: centro ? TextAlign.center : TextAlign.left,
         ),
         const SizedBox(height: 10.0),
         Text(
@@ -33,6 +37,7 @@ class CustomHeading extends StatelessWidget {
             color: color,
             fontSize: 15.0,
           ),
+          textAlign: centro ? TextAlign.center : TextAlign.left,
         ),
       ],
     );

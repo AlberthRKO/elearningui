@@ -69,6 +69,9 @@ class _AccountPageState extends State<AccountPage> {
               height: smallSpacer,
             ),
             CustomButtonBox(title: 'Login'),
+            SizedBox(
+              height: spacer,
+            ),
           ],
         ),
       ),

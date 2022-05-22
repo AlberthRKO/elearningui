@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                     CustomCategoryCard(),
                   ],
                 ),
-              )
+              ),
             ],
           ),
           // CustomCategoryCard(),

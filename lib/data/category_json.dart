@@ -76,61 +76,61 @@ const List allCategories = [
   {
     'icon': 'assets/images/code_icon.svg',
     'title': 'Code',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Finance & Accounting',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/brush_icon.svg',
     'title': 'Design',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Development',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Business',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'IT & Software',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Photography & Video',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Marketing',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Lifestyle',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Office Productivity',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Music',
-    'data': Code,
+    'data': code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
     'title': 'Personal Development',
-    'data': Code,
+    'data': code,
   },
 ];

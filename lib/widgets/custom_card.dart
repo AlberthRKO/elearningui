@@ -1,3 +1,4 @@
+import 'package:elearningui/pages/course_detail.dart';
 import 'package:elearningui/theme/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -73,17 +74,25 @@ class CustomCard extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 7),
-            child: Text(
-              titleCourse,
-              style: TextStyle(
-                color: secondary,
-                fontSize: 17,
-                fontWeight: FontWeight.w700,
+          GestureDetector(
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const CourseDetail(),
               ),
-              overflow: TextOverflow.ellipsis,
-              maxLines: 2,
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 7),
+              child: Text(
+                titleCourse,
+                style: TextStyle(
+                  color: secondary,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w700,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+              ),
             ),
           ),
           SizedBox(

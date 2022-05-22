@@ -37,6 +37,7 @@ dependencies:
   expandable: ^5.0.1
   modal_bottom_sheet: ^2.0.1
   device_preview: ^1.0.0
+  shimmer: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -78,7 +79,11 @@ flutter:
   fonts:
     - family: WorkSans
       fonts:
+        - asset: assets/fonts/WorkSans-Bold.ttf
+        - asset: assets/fonts/WorkSans-Light.ttf
+        - asset: assets/fonts/WorkSans-Medium.ttf
         - asset: assets/fonts/WorkSans-Regular.ttf
+        - asset: assets/fonts/WorkSans-SemiBold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

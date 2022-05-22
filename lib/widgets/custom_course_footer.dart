@@ -20,8 +20,13 @@ class CustomCourseFooter extends StatelessWidget {
     return (enrolled)
         ? Container(
             width: size.width,
-            height: 100.0,
-            padding: const EdgeInsets.all(appPadding),
+            height: 80.0,
+            padding: const EdgeInsets.only(
+              left: appPadding,
+              right: appPadding,
+              top: 18,
+              bottom: 18,
+            ),
             decoration: const BoxDecoration(
               color: textWhite,
               borderRadius: BorderRadius.only(
@@ -33,11 +38,11 @@ class CustomCourseFooter extends StatelessWidget {
           )
         : Container(
             width: size.width,
-            height: 100.0,
+            height: 80.0,
             padding: const EdgeInsets.only(
               left: appPadding,
               right: appPadding,
-              top: appPadding,
+              top: 18,
             ),
             decoration: const BoxDecoration(
               color: textWhite,

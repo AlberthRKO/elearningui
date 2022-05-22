@@ -26,9 +26,10 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       // ignore: deprecated_member_use
-      brightness: brightness,
+      // brightness: brightness,
       backgroundColor: backgroundColor,
       elevation: 0.0,
+      // indicador de atras
       automaticallyImplyLeading: false,
       primary: false,
       excludeHeaderSemantics: true,
@@ -41,26 +42,24 @@ class CustomAppBar extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 40.0,
-                    width: 40.0,
-                    decoration: BoxDecoration(
-                      color: primary.withOpacity(0.7),
-                      borderRadius: BorderRadius.circular(100.0),
-                      boxShadow: [
-                        BoxShadow(
-                          color: primary.withOpacity(0.5),
-                          spreadRadius: 0.0,
-                          blurRadius: 6.0,
-                          offset: Offset(0, 2),
-                        )
-                      ],
-                    ),
-                    alignment: Alignment.center,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                    child: Container(
+                      height: 40.0,
+                      width: 40.0,
+                      decoration: BoxDecoration(
+                        color: primary.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(100.0),
+                        boxShadow: [
+                          BoxShadow(
+                            color: primary.withOpacity(0.5),
+                            spreadRadius: 0.0,
+                            blurRadius: 6.0,
+                            offset: Offset(0, 2),
+                          )
+                        ],
+                      ),
+                      alignment: Alignment.center,
                       child: SvgPicture.asset(
                         assetImg + 'arrow_left_icon.svg',
                         color: textWhite,
